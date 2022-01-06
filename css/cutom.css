@@ -1,0 +1,11 @@
+.letraBranca {
+    color: white;
+}
+
+.font-50 {
+    font-size: 50px;
+}
+
+a:hover {
+    color: blue
+}

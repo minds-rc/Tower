@@ -44,25 +44,75 @@
         </nav>
     </header>
 
-    <!-- ------------------------------BANER------------------------------ -->
-    <section class="pb-3">
-        <div>
-            <img src="img/interior da casa baner.jpg" class="w-100" alt="">
+    <!-- ------------------------------CARROCEL------------------------------ -->
+    <section class="pb-5">
+        <div id="carouselHome" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <div class="carousel-inner">
+                <div class="carousel-item active ratio ratio-21x9">
+                    <img src="img/Foto1.jpg" class="d-block w-100" alt="fotografia imobiliária">
+                </div>
+                <div class="carousel-item ratio ratio-21x9">
+                    <img src="img/Foto2.jpg" class="d-block w-100" alt="fotografia imobiliária">
+                </div>
+                <div class="carousel-item ratio ratio-21x9">
+                    <img src="img/Foto3.jpg" class="d-block w-100" alt="fotografia imobiliária">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </section>
 
     <!-- ------------------------------VÍDEO------------------------------ -->
-    <section class="container">
-
-        <div class="ratio ratio-16x9">
-            <iframe src="https://www.youtube.com/embed/zLoiA4AsYFg?rel=0" title="YouTube video"
-                allowfullscreen></iframe> <!-- video provisório -->
-            <!-- adicionar '?rel=0' no src para que os videos sugeridos sejam do mesmo canal -->
+    <section class="pb-5">
+        <div class="container">
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/zLoiA4AsYFg?rel=0" title="YouTube video"
+                    allowfullscreen></iframe> <!-- video provisório -->
+                <!-- adicionar '?rel=0' no src para que os videos sugeridos sejam do mesmo canal -->
+            </div>
         </div>
+
     </section>
 
     <!-- ------------------------------FORMS------------------------------ -->
+    <section class="pb-5">
+        <div class="container">
+            <h2 class="font-50 letraBranca text-center">Contato</h2>
+            <form class="d-block w-50 mx-auto">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Nome e sobrenome" name="nome">
+                </div>
 
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="E-mail" name="email">
+                </div>
+
+                <div class="mb-3">
+                    <input type="number" class="form-control" placeholder="Telefone" name="telefone">
+                </div>
+
+                <div class="mb-3">
+                    <textarea name="msg" class="form-control" placeholder="Mensagem" name="mensagem"></textarea>
+                </div>
+
+            </form>
+        </div>
+    </section>
 </body>
+
+<footer>
+    <div class="container">
+
+    </div>
+</footer>
 
 </html>
