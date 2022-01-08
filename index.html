@@ -27,16 +27,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                            <a class="nav-link active towerHover" aria-current="page" href="#">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Quem Somos</a>
+                            <a class="nav-link towerHover" href="#">Quem Somos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Fotos</a>
+                            <a class="nav-link towerHover" href="#">Fotos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Vídeos</a>
+                            <a class="nav-link towerHover" href="#">Vídeos</a>
                         </li>
                     </ul>
                 </div>
@@ -47,6 +47,7 @@
     <!-- ------------------------------CARROCEL------------------------------ -->
     <section class="pb-5">
         <div id="carouselHome" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+            <!-- data-bs-ride='carousel' para a rolagem do carrocel iniciar automaticamente e data-bs-pause='false' para o carrocel não parar de passar mesmo enquanto o mouse estiver na imagem -->
             <div class="carousel-inner">
                 <div class="carousel-item active ratio ratio-21x9">
                     <img src="img/Foto1.jpg" class="d-block w-100" alt="fotografia imobiliária">
@@ -58,13 +59,11 @@
                     <img src="img/Foto3.jpg" class="d-block w-100" alt="fotografia imobiliária">
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome"
-                data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
             </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome"
-                data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
@@ -76,7 +75,7 @@
         <div class="container">
             <div class="ratio ratio-16x9">
                 <iframe src="https://www.youtube.com/embed/zLoiA4AsYFg?rel=0" title="YouTube video"
-                    allowfullscreen></iframe> <!-- video provisório -->
+                    allowfullscreen></iframe>
                 <!-- adicionar '?rel=0' no src para que os videos sugeridos sejam do mesmo canal -->
             </div>
         </div>
@@ -97,7 +96,7 @@
                 </div>
 
                 <div class="mb-3">
-                    <input type="number" class="form-control" placeholder="Telefone" name="telefone">
+                    <input type="text" class="form-control" placeholder="Telefone" name="telefone">
                 </div>
 
                 <div class="mb-3">
