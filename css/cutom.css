@@ -1,15 +1,42 @@
+/* -------------TEXTO------------- */
 .letraBranca {
     color: white;
 }
-
 .font-50 {
     font-size: 50px;
 }
 
-.towerHover:hover {
-    color: rgb(56, 69, 248) !important
+/* -------------custom bootstrap------------- */
+.decoration-none {  
+    text-decoration: none;
 }
 
+
+/* -------------Botões------------- */
+.btn-azulTower {
+    color: #fff;
+    background-color: #4478bf;
+    border-color: #4478bf;
+  }
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #4478bf;
+    border-color: #4478bf;
+  }
+
+  .btn-outline-azulTower {
+    color: #4478bf;
+    border-color: #4478bf;
+  }
+  .btn-outline-azulTower:hover {
+    color: #fff;
+    background-color: #4478bf;
+    border-color: #4478bf;
+  }
+
+.towerHover:hover {
+    color: #4478bf !important
+}
 .whatsappBtn{
     max-width: 90px;
     position: fixed;
@@ -17,3 +44,4 @@
     right: 2%;
     z-index: 1000;
 }
+
