@@ -7,5 +7,13 @@
 }
 
 .towerHover:hover {
-    color: blue !important
+    color: rgb(56, 69, 248) !important
+}
+
+.whatsappBtn{
+    max-width: 90px;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 1000;
 }
