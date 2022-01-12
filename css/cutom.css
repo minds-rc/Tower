@@ -2,8 +2,22 @@
 .letraBranca {
     color: white;
 }
+
+.letraPreta {
+  color: black;
+}
+
 .font-50 {
     font-size: 50px;
+}
+
+/* -------------LOGO------------- */
+.logoTower {
+  max-width: 50px;
+}
+
+.logoTowerFooter {
+  max-width: 100px;
 }
 
 /* -------------custom bootstrap------------- */
@@ -38,10 +52,19 @@
     color: #4478bf !important
 }
 .whatsappBtn{
-    max-width: 90px;
+    max-width: 85px;
     position: fixed;
     bottom: 2%;
     right: 2%;
     z-index: 1000;
+}
+
+.instaBtn {
+  max-width: 60px;
+}
+
+/* -------------BG------------- */
+.bg-tower{
+  background-color: #4478bf ;
 }
 
