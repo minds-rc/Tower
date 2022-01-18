@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/cutom.css">
     <script src="js/bootstrap.js" defer></script>
+    <script src="js/validacoes.js" defer></script>
+
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <title>Produtora Tower</title>
 </head>
-
 <body class="bg-dark">
 
     <div>
@@ -52,82 +53,70 @@
         </nav>
     </header>
 
-    <!-- ------------------------------CARROSSEL------------------------------ -->
-    <section class="pb-5">
-        <div id="carouselHome" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
-            <!-- data-bs-ride='carousel' para a rolagem do carrossel iniciar automaticamente e data-bs-pause='false' para o carrossel não parar de passar mesmo enquanto o mouse estiver na imagem -->
-            <div class="carousel-inner">
-                <div class="carousel-item active ratio" style="--bs-aspect-ratio: 50%;">
-                    <img src="img/Foto1.jpg" class="d-block w-100" alt="fotografia imobiliária">
-                </div>
-                <div class="carousel-item ratio" style="--bs-aspect-ratio: 50%;">
-                    <img src="img/Foto2.jpg" class="d-block w-100" alt="fotografia imobiliária">
-                </div>
-                <div class="carousel-item ratio" style="--bs-aspect-ratio: 50%;">
-                    <img src="img/Foto3.jpg" class="d-block w-100" alt="fotografia imobiliária">
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselHome" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselHome" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-    </section>
-
-    <!-- ------------------------------CALL TO ACTION------------------------------ -->
-    <section class="container pb-5">
-        <div class="row">
-            <a class="btn btn-outline-azulTower col-6 mx-auto btn-lg" href="https://wa.me/5532991496722" target="_blank" role="button">QUERO TER IMAGENS INCRIVEIS</a>
-        </div>
-    </section>
-
-    <!-- ------------------------------VÍDEO------------------------------ -->
-    <section class="pb-5">
-        <div class="container-fluid">
-            <div class="ratio ratio-16x9">
-                <iframe src="https://www.youtube.com/embed/zLoiA4AsYFg?rel=0" title="YouTube video"
-                    allowfullscreen></iframe>
-                <!-- adicionar '?rel=0' no src para que os videos sugeridos sejam do mesmo canal -->
-            </div>
-        </div>
-
-    </section>
-
     <!-- ------------------------------FORMS------------------------------ -->
     <section class="pb-5">
         <div class="container">
-            <h2 class="font-50 letraBranca text-center">Contato</h2>
+            <h2 class="font-50 letraBranca text-center">Cadastro</h2>
             <form class="d-block w-50 mx-auto">
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Nome e sobrenome" name="nome">
-                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="nome" placeholder="Nome" name="nome" required>
+                            <small id="erro-nome" class="letraVermelha"></small>
+                        </div>
+            
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" name="nome" required>
+                            <small id="erro-sobrenome" class="letraVermelha"></small>
+                        </div>
+            
+                        <div class="mb-3">
+                            <input type="date" class="form-control" id="data" placeholder="Data de Nascimento" name="data de Nascimento" required>
+                            <small id="erro-data" class="letraVermelha"></small>
+                        </div>
+            
+                        <div class="mb-3">
+                            <input type="number" class="form-control" id="cpf" placeholder="CPF/CNPJ" name="cpf cnpj" required>
+                            <small id="erro-cpf" class="letraVermelha"></small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="endereco" placeholder="Endereço" name="endereço" required>
+                            <small id="erro-endereco" class="letraVermelha"></small>
+                        </div>
+        
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="cep" placeholder="Cep" name="cep" required>
+                            <small id="erro-cep" class="letraVermelha"></small>
+                        </div>
+        
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="usuario" placeholder="Usuário" name="nome de usuário" required>
+                            <small id="erro-usuario" class="letraVermelha"></small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="senha" placeholder="Senha" name="senha" required>
+                            <small id="erro-senha" class="letraVermelha"></small>
+                        </div>
 
-                <div class="mb-3">
-                    <input type="email" class="form-control" placeholder="E-mail" name="email">
-                </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="repete-senha" placeholder="Repita sua senha" name="senha" required>
+                            <small id="erro-repete-senha" class="letraVermelha"></small>
+                        </div>
 
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Telefone" name="telefone">
-                </div>
-
-                <div class="mb-3">
-                    <textarea name="msg" class="form-control" placeholder="Mensagem" name="mensagem"></textarea>
-                </div>
-
-            </form>
-
-            <div class="row">
-                <button type="submit" class="col-3 d-block mx-auto btn btn-outline-azulTower">Enviar</button>
-            </div>
-
-        </div>
+                        <div class="alert alert-danger" hidden id="senhas-diferentes">
+                            Senhas não correspondem!
+                        </div>
+                       
+                    </form>
+            
+                    <div class="row">
+                        <button type="button" class="col-3 d-block mx-auto btn btn-outline-azulTower" onclick="validar()">Enviar</button>
+                    </div>
+                    </div>
     </section>
 </body>
-
 <!-- ------------------------------FOOTER------------------------------ -->
 <footer class="bg-tower">
 
